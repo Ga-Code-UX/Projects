@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Advent+Pro&family=DM+Serif+Display&family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Inter:wght@200&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@300;400;500;600;800&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+:root{
+    --transition-1:0.25s ease;
+    --gray:#808080;
+    --whitesmoke:#f5f5f5;
+    --green:green;
+    --black:#111;;
+    --btn-color:#fff;
+    --color-light-gray:	#D3D3D3;
+    --yellow: #ffff00;
+    --purple:#A020F0;
+    --teal:#008080;
+    --azul:#6495ED;
+    --red:#8B0000;
+    --light-pink:#FFB6C1;
+    --cinzaverde:#7c8250;
+    --LightSkyBlue:#87CEFA;
+    --orange:#FFA500;
+    --violet:#EE82EE;
+    --color-header:	#4F4F4F;
+    --color1:#EFC88B;
+    --color2:#fd6d63;
+    --color3:#D3D5D7;
+    --color4:#F4E3B2;
+}
+
+html{
+    scroll-behavior:smooth ;
+}
+body{
+font-family: 'Lato', sans-serif;
+padding: 0;
+margin: 0;
+font-weight: 400;
+
+
+
+}
+
+*:after,
+ :before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+a{
+    color: var(--color2);
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--cinzaverde) !important;
+   
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+/* custom scrollbar*/
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--btn-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--black);
+}
+
+/* custom design css*/
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--color2);
+}
+h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    color: var(--color2);
+    line-height: 3rem;
+}
+h4{
+    color: var(--color2);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+h5{
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+p{
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+.main-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--color1);
+    border: 0.1875rem solid var(--color2);
+    color: var(--btn-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.white-btn{
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--btn-color);
+    border: 0.1875rem solid var(--btn-color);
+    color: var(--color1);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.fa-brands.fa-whatsapp{
+    font-size: 2rem;
+    color: var(--color2);
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--azul);
+}
+.white-btn:hover{
+    background-color: transparent;
+    color: var(--azul);
+    border-color: var(--cinzaverde);
+}
+.text_content{
+    width: 70%;
+    margin: auto;
+}
+
+.counter_section h2,
+.testimonial_section h2,
+.book_food_text h2{
+    color: var(--btn-color);
+}
+
+
+/************ +++++++ **************
+    design of the Header
+ ************ +++++++ **************/
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out;
+}
+.navigation-wrap .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+.fa-solid.fa-bars{
+    font-size: 2.5rem;
+    color: var(--color2);
+}
+.nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color2);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/******************************
+change navbar styling on scroll
++++++++++++++++++++++++++++++++*/
+
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--btn-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.6);
+    transition: all .15s ease-in-out 0s;
+}
+
+/******************************
+    Banner Design
++++++++++++++++++++++++++++++++*/
+.top-banner{
+   width: 100%;
+   background: url(../images/photo-banner1.png) no-repeat center; /*melhor colocar a foto com fundo transparente adobe express*/
+   background-size:cover;
+   margin-top: 1rem;
+   padding: 16.875rem 0 9.375rem; 
+}
+
+/******************************
+    Counter Design
++++++++++++++++++++++++++++++++*/
+.counter-section{
+background-color: var(--color1);
+padding: 2.5rem 0;
+}
+.counter-section p{
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+/******************************
+    about Design
++++++++++++++++++++++++++++++++*/
+.about-section{
+    background: var(--btn-color);
+    margin-top: 0.5rem;
+}
+.about-section .card,
+.about-section .card img{
+    border-radius: 0.625rem;
+}
+.about-section .text-sec{
+    padding-left: 2rem;
+}
+
+/******************************
+    food type section design
++++++++++++++++++++++++++++++++*/
+.food-type{
+    padding-top: 3.25rem;
+}
+.food-type ul li{
+    font-size: 1rem;
+    color: var(--color2);
+    font-weight: 600;
+    position: relative;
+    margin-left: 30px;
+}
+.food-type ul li::before{
+    position: absolute;
+    left: -2.1875rem;
+    color: var(--cinzaverde);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+.store-section{
+    width: 100%;
+    height: 24.125rem;
+    background:url(../images/aveia3.png) no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: var(--color4);
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding:4.375rem 0 ;
+}
+.store-section h2{
+    color: var(--color2);
+}
+
+/*++++++++++++++++++++++++
+    NOSSOS PRODUTOS
+*++++++++++++++++++++++++++*/
+.explore-products .card{
+    background-color: transparent; 
+    border: none; 
+    align-items: center;
+}
+.explore-products .card:hover{
+    transition: var(--transition-1);
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.7);
+}
+
+.explore-products .card img{
+    object-fit: cover;
+    
+    
+}
+
+.explore-products .card span{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color2);
+    padding-bottom:1rem ;
+    border-bottom: 0.0625rem solid #eee;
+}
+.explore-products .card span del{
+    color: var(--gray);
+    margin-left: 0.5rem;
+}
+
+
+/*++++++++++++++++++++++++
+    SECÇÃO TESTEMONIAL
+*++++++++++++++++++++++++++*/
+.section-testimonial{
+    margin-top: 1rem;
+    background-color: var(--color4);
+}
+.section-testimonial .container .text-content{
+    padding: 0.5rem;
+}
+
+.section-testimonial .carousel-item{
+    padding: 9rem 2.125rem;
+    background-color: var(--btn-color);
+    border-radius: 10%;
+    text-align: center;
+    margin: 1rem;
+}
+.section-testimonial .carousel-item  img{
+    max-width: 16rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-left: 27rem;
+    margin-top: -4rem;
+   
+}
+.section-testimonial .carousel-item .carousel-caption p{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+.section-testimonial .carousel-indicators{
+    bottom: 1rem;
+}
+.section-testimonial .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color2);
+    margin-right: 1rem;
+    opacity: 0.2;
+    
+}
+.section-testimonial .carousel-indicators button.active{
+    opacity: 1;
+    background-color: var(--color2);
+}
+
+/*++++++++++++++++++++++++
+   FAQs Design
+*++++++++++++++++++++++++++*/
+
+.faqs h2{
+   text-align: center;
+   font-size: 1.5rem;
+   margin-top: 1rem;
+}
+.faqs h4{
+    color: var(--black);
+    margin-left: 4rem;
+}
+.faqs p{
+    color: var(--gray);
+    margin-left: 4rem;
+}
+/*
+   Livro de cereais Design
+*/
+.book-cereal{  /*CSS efeito Parallax*/
+    width: 100%;
+    background: url(../images/cereals-563796_640.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding:4.375rem 0 ;
+}
+
+/*++++++++++++++++++++++++
+   newsletter
+*++++++++++++++++++++++++++*/
+#newsletter{
+    margin-top: 3rem;
+}
+
+.newsletter{
+   
+    width: 55%;
+    margin: 0 auto;
+}
+.newsletter .form-control{
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 0;
+    background: transparent;
+    border:  0.1875rem solid var(--gray);
+    color: var(--black);
+
+}
+.newsletter .form-control:hover,
+.newsletter .form-control:focus{
+outline: none;
+box-shadow: none;
+border-color: var(--color2);
+}  
+.newsletter .main-btn-form{
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    width: 100%;
+    background-color: var(--color1);
+    border: 0.1875rem solid var(--color2);
+    color: var(--btn-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.newsletter .main-btn-form:hover{
+    background-color: transparent;
+    color: var(--azul);
+} 
+
+/*
+   footer
+*/
+.footer{
+    margin-top: 3rem;
+    background: var(--color-header);
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: var(--btn-color);
+    padding: 0 1.875rem;
+}
+.footer .footer-link a:hover{
+   color: var(--btn-color) !important; 
+}
+.footer .footer-social .fa-brands{
+    font-size:1rem ;
+    color: var(--btn-color);
+    padding:  0 1rem;
+}
+.footer .footer-social .fa-brands:hover{
+  
+    color: var(--cinzaverde);
+   
+}
+/*
+    Media queries
+*/
+@media(max-width:1180px){
+    /*section about*/
+    
+    
+}
+@media(max-width:1024px){
+    /*section about*/
+    
+  /*Carousel Design*/
+  .section-testimonial .carousel-item .carousel-caption p{
+    padding: 0;
+    margin: -0.1rem;
+    font-size: 0.8rem;
+}
+}
+
+
+@media(max-width:991px){
+    /*custom classes*/
+    .text-content{
+        width: 100%;
+    }
+    /*navbar brand*/
+    .navigation-wrap .navbar-brand img {
+      height: 3.8125rem;  
+    }
+    .navigation-wrap{
+        text-align: center;
+        background-color: var(--btn-color);
+    }
+    .navigation-wrap .nav-link{
+        line-height: 1.875rem;
+    }
+
+    /*Carousel Design*/
+    .section-testimonial .carousel-item{
+        margin-left: 0.2rem;
+       
+    }
+    
+    .section-testimonial .carousel-item .carousel-caption p{
+          padding: 0;
+          margin: -0.1rem;
+          font-size: 0.8rem;
+    }
+    .section-testimonial .carousel-item  img{
+        max-width: 16rem;
+        border-radius: 50%;
+        padding: 0;
+        margin-left: 2rem;
+        margin-top: -8rem;
+       
+    }
+
+    .store-section{
+        background-size: contain;
+    }
+    .book-cereal{
+        background-size: contain;
+    }
+    
+}  
+
+@media(max-width:767px){
+    /* custom css */
+    h1{
+        margin-top: 20%;
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    /* top-banner */
+    .top-banner{
+        padding: 1.875rem 0 1.375rem;
+    }
+
+    /* store-section */
+    .store-section{
+        height: auto;
+        padding: 3rem 0;
+        background-size: contain;
+    }
+    .book-cereal{
+        background-size: contain;
+        background-color: var(--color1);
+    }
+    
+    /* newsletter */
+    .newsletter{
+        width: 75%;
+    }
+    .newsletter .main-btn-form{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* footer */
+    .footer .footer-link{
+            padding:  0 0.7rem;
+       }
+
+}
